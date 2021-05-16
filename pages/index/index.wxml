@@ -1,0 +1,73 @@
+<!-- 外部大盒子 -->
+<view class="main">
+<!-- 标题盒子 -->
+  <view class="box1">
+    便捷小空调
+  </view>
+
+  <!-- 提示盒子 -->
+  <view class="tag">
+  <mp-icon  icon="tag" color="black" size="{{13}}"></mp-icon>
+  Tip: 心静自然凉！
+  </view>
+
+  <view class="kongtiao">
+    <view class="jieneng">
+      <view class="diyipai">
+        <view class="dian"></view>
+        <view class="dian"></view>
+        <view class="dian"></view>
+        <view class="dian"></view>
+        <view class="dian"></view>
+        <view class="dian"></view>
+      </view>
+      <view class="dierpai">
+        <view class="tiao1 tiao"></view>
+        <view class="tiao2 tiao"></view>
+        <view class="tiao3 tiao"></view>
+        <view class="tiao4 tiao"></view>
+        <view class="tiao5 tiao"></view>
+      </view>
+    </view>
+
+      <!-- 温度区 -->
+    <view class="temp" wx:if="{{oppn == true}}">{{num}}℃</view>
+    <!-- 扫风区 -->
+    <view class="feng" wx:if="{{showFeng == true}}">自动扫风</view>
+    <!-- 定数关闭 -->
+    <view class="dingshi" wx:if="{{showTime == true}}">自动关闭</view>
+
+    <view class="xian" ></view>
+
+    <view class="kaiguan" wx:if="{{oppn == true}}"></view>
+  </view>
+  
+  <!-- 三条竖线 -->
+  <view class="shuxian" wx:if="{{oppn == true}}">
+        <view class="first">|</view>
+        <view class="second">|</view>
+        <view class="three">|</view>
+  </view>
+
+  <!-- 独立遥控器 -->
+  <view class="duli">独立遥控器</view>
+
+  <view class='btns'>
+    <button bindtap="saofeng" class="btn1" style="width:65px;height:65px;border-radius: 50%;margin-top: 200px;color:	#F4A460">扫风</button>
+
+    <button bindtap="btnClose" class="btn1" style="width:65px;height:65px;margin-left: -30px;border-radius: 50%;margin-top: 200px;color:		#FF6347">开关</button>
+    <button bindtap="zidongguanbi" class="btn1" style="width:65px;height:65px;margin-left: -30px;border-radius: 50%;margin-top: 200px;	color:	#D02090">定时</button>
+  </view>
+  <button class="btn1" bindtap="up" style="width:65px;height:65px;border-radius: 50%;margin-top: 30px;color:		#4169E1;line-height:50px;font-size:20px">+</button>
+  <button class="btn1" bindtap="down" style="width:65px;height:65px;border-radius: 50%;margin-top: 30px;color:		#191970;line-height:50px;font-size:30px">-</button>
+    
+  <view class="taglast">
+  <mp-icon  icon="at" color="black" size="{{13}}"></mp-icon>
+  Air for Guo made by Nie
+</view>
+  <view class="ctera">2021-05-20</view>
+  
+
+    
+  
+</view>
